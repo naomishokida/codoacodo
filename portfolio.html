@@ -5,6 +5,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link href="style_portfolio.css" rel="stylesheet" type="text/css"/>
 	<script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>  
+    	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+	<script type="text/javascript">//<![CDATA[ 
+        $(function(){
+            function onScrollInit( items, trigger ) {
+                items.each( function() {
+                var osElement = $(this),
+                    osAnimationClass = osElement.attr('data-os-animation'),
+                    osAnimationDelay = osElement.attr('data-os-animation-delay');
+                  
+                    osElement.css({
+                        '-webkit-animation-delay':  osAnimationDelay,
+                        '-moz-animation-delay':     osAnimationDelay,
+                        'animation-delay':          osAnimationDelay
+                    });
+
+                    var osTrigger = ( trigger ) ? trigger : osElement;
+                    
+                    osTrigger.waypoint(function() {
+                        osElement.addClass('animated').addClass(osAnimationClass);
+                        },{
+                            triggerOnce: true,
+                            offset: '90%'
+                    });
+                });
+            }
+
+            onScrollInit( $('.os-animation') );
+            onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
+	});//]]>  
+    	</script>
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<title>Java FullStack: Portfolio</title>
 </head>
@@ -231,39 +262,6 @@
         	<p>Crafted with <i class="fas fa-mug-hot"></i> and <i class="fas fa-heart"></i> by <a href="#"><i>Naomi</i></a></p>
         </section>
 	</footer>
-
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>  
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
-    
-	<script type="text/javascript">//<![CDATA[ 
-        $(function(){
-            function onScrollInit( items, trigger ) {
-                items.each( function() {
-                var osElement = $(this),
-                    osAnimationClass = osElement.attr('data-os-animation'),
-                    osAnimationDelay = osElement.attr('data-os-animation-delay');
-                  
-                    osElement.css({
-                        '-webkit-animation-delay':  osAnimationDelay,
-                        '-moz-animation-delay':     osAnimationDelay,
-                        'animation-delay':          osAnimationDelay
-                    });
-
-                    var osTrigger = ( trigger ) ? trigger : osElement;
-                    
-                    osTrigger.waypoint(function() {
-                        osElement.addClass('animated').addClass(osAnimationClass);
-                        },{
-                            triggerOnce: true,
-                            offset: '90%'
-                    });
-                });
-            }
-
-            onScrollInit( $('.os-animation') );
-            onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
-	});//]]>  
-    </script>
 
 </body>
 </html>
