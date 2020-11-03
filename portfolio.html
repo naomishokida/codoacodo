@@ -31,7 +31,7 @@
 			</div>
 		</section>
 
-		<section id="about_me">
+		<section id="about_me"  class="staggered-animation-container">
 			<div class="aboutme_title">
 				<h2>About Me</h2>
 			</div>
@@ -41,12 +41,12 @@
 			</div>
 
 			<div class="aboutme_text">
-				<p><mark>Hello, my name is Naomi Shokida</mark> and I'm from Buenos Aires, Argentina. I have a bachelor's degree in architecture from the 'University of Buenos Aires'. But about two years ago I've begun to learn web development and programming.  The first course I took about web design was the 'Professional Frontend Developer' course at the 'National Technological University UTN FRBA'. That's when I realized that I really like this because I can combine my knowledge in design with code! So nowadays I still keep learning to improve my skills and be a better <mark>frontend developer</mark>. I’m currently interested in learning more about JavaScript and Java to become a <mark>full stack web developer</mark>.</p>
+				<p class="staggered-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.5s"><mark class="staggered-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.5s">Hello, my name is Naomi Shokida</mark> and I'm from Buenos Aires, Argentina. I have a bachelor's degree in architecture from the 'University of Buenos Aires'. But about two years ago I've begun to learn web development and programming.  The first course I took about web design was the 'Professional Frontend Developer' course at the 'National Technological University UTN FRBA'. That's when I realized that I really like this because I can combine my knowledge in design with code! So nowadays I still keep learning to improve my skills and be a better <mark class="staggered-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.5s">frontend developer</mark>. I’m currently interested in learning more about JavaScript and Java to become a <mark class="staggered-animation" data-os-animation="fadeInRight" data-os-animation-delay="0.5s">full stack web developer</mark>.</p>
 			</div>
 		</section>
 
 
-		<section class="education" id="education">
+		<section  id="education" class="education" class="staggered-animation-container">
 			<div class="education_title">
 				<h2>Education</h2>
 			</div>
@@ -56,22 +56,22 @@
 				<div class="education_studies">
 					<h4 class="education_subtitle">Studies</h4>
 					<div class="studies_item">
-						<h5>Codo a Codo 4.0 Java FullStack</h5>
+						<h5  class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s">Codo a Codo 4.0 Java FullStack</h5>
 						<p>Ministerio de Educación e Innovación de la Ciudad de Buenos Aires</p>
 						<p>Duration: 208 hours | About: HTML5, CSS3, JavaScript, Java.</p>
 					</div>
 					<div class="studies_item">
-						<h5>Codo a Codo - Java</h5>
+						<h5  class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s">Codo a Codo - Java</h5>
 						<p>Ministerio de Educación e Innovación de la Ciudad de Buenos Aires</p>
 						<p>Duration: 364 hours | About: Java.</p>
 					</div>
 					<div class="studies_item">
-						<h5>Professional Frontend Developer</h5>
+						<h5  class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s">Professional Frontend Developer</h5>
 						<p>Universidad Tecnológica Nacional UTN-FRBA.</p>
 						<P>Duration: 210 hours | About: HTML5, CSS3, Bootstrap, JavaScript.</P>
 					</div>
 					<div class="studies_item">
-						<h5>Arquitectura</h5>
+						<h5  class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s">Arquitectura</h5>
 						<p>Universidad de Buenos Aires 2011-2019</p>
 					</div>
 				</div>
@@ -142,9 +142,9 @@
 
 		<hr />
 		
-		<section class="projects" id="projects">
+		<section  id="projects" class="projects" class="staggered-animation-container">
 			<div class="projects_title">
-				<h2>My Projects</h2>
+				<h2 class="os-animation" data-os-animation="fadeInRight" data-os-animation-delay="0s">My Projects</h2>
 			</div>
 
 			<div class="projects_item">
@@ -201,10 +201,10 @@
 				<h2>Contact</h2>
 			</div>
 
-			<div class="contact_items">
+			<div class="contact_items" class="staggered-animation-container">
 				<div class="contact_text">
 					<p>Get to know me!</p>
-					<p>I'd like to hear from you so feel free to email me and I'll get back to you as soon as I can! You can also check out my social links to get in touch that way!</p>
+					<p class="os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0s">I'd like to hear from you so feel free to email me and I'll get back to you as soon as I can! You can also check out my social links to get in touch that way!</p>
 				</div>
 
 				<div class="contact_icons">
@@ -231,6 +231,39 @@
         	<p>Crafted with <i class="fas fa-mug-hot"></i> and <i class="fas fa-heart"></i> by <a href="#"><i>Naomi</i></a></p>
         </section>
 	</footer>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.js"></script>  
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+    
+	<script type="text/javascript">//<![CDATA[ 
+        $(function(){
+            function onScrollInit( items, trigger ) {
+                items.each( function() {
+                var osElement = $(this),
+                    osAnimationClass = osElement.attr('data-os-animation'),
+                    osAnimationDelay = osElement.attr('data-os-animation-delay');
+                  
+                    osElement.css({
+                        '-webkit-animation-delay':  osAnimationDelay,
+                        '-moz-animation-delay':     osAnimationDelay,
+                        'animation-delay':          osAnimationDelay
+                    });
+
+                    var osTrigger = ( trigger ) ? trigger : osElement;
+                    
+                    osTrigger.waypoint(function() {
+                        osElement.addClass('animated').addClass(osAnimationClass);
+                        },{
+                            triggerOnce: true,
+                            offset: '90%'
+                    });
+                });
+            }
+
+            onScrollInit( $('.os-animation') );
+            onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
+	});//]]>  
+    </script>
 
 </body>
 </html>
