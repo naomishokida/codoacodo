@@ -24,7 +24,6 @@
 .logo {
 	width: 100vw;
 	height: 10vh;
-	/*background-color: #fe7171;*/
 }
 
 .logo a img {
@@ -40,7 +39,6 @@
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
-	/*background-color: #fe7171;*/
 }
 
 .nav a {
@@ -50,8 +48,7 @@
 	text-align: center;
 	align-content: center;
 	font-size: 1.2rem;
-    letter-spacing: .15rem;
-    /*font-weight: bold;*/
+    	letter-spacing: .15rem;
 	background-color: #ffb0b0;
 }
 
@@ -66,7 +63,6 @@
 	height: 85vh;
 	justify-content: flex-end;
 	align-items: flex-end;
-	/*background-color: grey;*/
 }
 
 h1 {
@@ -106,8 +102,6 @@ h1 {
   }
 }
 
-
-
 h2 {
 	font-size: 2.5vw;  
 	text-align: center;
@@ -128,7 +122,6 @@ p {
 	height: 100vh;
 	align-items: center;
 	align-content: center;
-	/*background-color: pink;*/
 }
 
 .aboutme_title {
@@ -140,8 +133,7 @@ p {
 	justify-content: center;
 	align-content: center;
 	align-items: center;
-	border-bottom: 1px dashed #595b83;;
-	/*align-items: flex-end;*/
+	border-bottom: 1px dashed #595b83;
 	background-color: #ffb0b0;
 }
 
@@ -152,13 +144,11 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/*background-color:#595b83;*/
 }
 
 .me_img {
 	width: 25vw;
 	height: auto;
-	/*background-color: pink;*/
 }
 
 .aboutme_text {
@@ -189,7 +179,6 @@ p {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	/*background-color: red;*/
 }
 
 .education_title {
@@ -213,7 +202,6 @@ p {
 	flex-direction: row;
 	width: 80vw;
 	height: 100vh;
-	/*background-color: green;*/
 }
 
 .education_studies {
@@ -225,7 +213,6 @@ p {
 	padding: 1rem;
 		box-sizing: border-box;
 		border-right: 2px dashed black;
-	/*background-color: yellow;*/
 }
 
 h4 {
@@ -256,19 +243,7 @@ h5 {
 	height: auto;
 		box-sizing: border-box;
 	padding: 1rem;
-	/*background-color: red;*/
 }
-/*
-.education_conocimientos {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 30vw;
-	height: 100vh;
-	padding: 1rem;
-	background-color: pink;
-}
-*/
 
 p i {
 	color: #595b83;
@@ -301,11 +276,6 @@ p i {
 	background-color: pink;
 }
 
-
-/*
- Nuevas clases: .languages, .skills_subtitle, .skills_item, .language_item
- */
-
 .web, .design, .languages {
 	display: flex;
 	width: 29vw;
@@ -323,7 +293,6 @@ p i {
 	justify-content: flex-start;
 	align-content: flex-end;
 	align-items: flex-start;
-	/*background-color: red;*/
 }
 
 .skills_item {
@@ -333,9 +302,7 @@ p i {
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: flex-start;
-	/*background-color: blue;*/
 }
-
 
 .skills_it, .design_programs {
 	width: 10vw;
@@ -348,7 +315,6 @@ p i {
 	height: auto;
 }
 
-
 .projects {
 	display: flex;
 	flex-direction: row;
@@ -357,7 +323,6 @@ p i {
 	flex-wrap: wrap;
 	width: 100vw;
 	height: auto;
-	/*background-color: red;*/
 }
 
 .projects_title {
@@ -369,7 +334,6 @@ p i {
 	justify-content: center;
 	align-content: center;
 	align-items: center;
-	/*background-color: green;*/
 }
 
 .projects_item {
@@ -378,7 +342,6 @@ p i {
 	margin: .6rem;
 	border: 1px green;
 	align-content: space-between;
-	/*background-color: yellow;*/
 }
 
 p a {
@@ -414,7 +377,6 @@ p a:hover, a:focus {
 	flex-wrap: wrap;
 	width: 100vw;
 	height: 50vh;
-		/*background-color: violet;*/
 }
 
 .contact_title {
@@ -439,7 +401,6 @@ p a:hover, a:focus {
 	align-items: center;
 	align-content: center;
 	border-top: 2px dashed black;
-	/*background-color: black;*/
 }
 
 .contact_text {
@@ -452,20 +413,16 @@ p a:hover, a:focus {
 	align-content: flex-end;
 	padding-right: 2.5rem;
 	padding-left: 2.5rem;
-		/*background-color: green;*/
 }
 
 .contact_text p:first-child {
 	font-size: 1.5rem;
 	letter-spacing: 0.3rem;
-		/*font-weight: bold;*/
 }
 
 .contact_text p:last-child {
 	font-size: 1.2rem;
 	letter-spacing: 0.10rem;
-		/*text-align: justify;
-		/*font-weight: bold;*/
 }
 
 .contact_icons {
@@ -477,7 +434,6 @@ p a:hover, a:focus {
 	justify-content: center;
 	align-items: center;
 	align-content: flex-start;
-		/*background-color: blue;*/
 }
 
 .icons {
@@ -489,11 +445,9 @@ p a:hover, a:focus {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-		/*background-color: yellow;*/
 }
 
 .icon {
-	/*background-color: pink;*/
 	width: 30rem;
 	text-align: center;
 	display: inline-block;
@@ -514,7 +468,6 @@ p a:hover, a:focus {
 	font-size: 2.5rem;
 }
 
-
 .social {
 	display: flex;
 	flex-direction: row;
@@ -533,16 +486,15 @@ p a:hover, a:focus {
 }
 
 
+/*--------------------INICIO CSS para MEDIA 600 A 1033PX--------------------*/
 
-/*--------------------INICIO CSS para MEDIA 600 A 1013PX--------------------*/
-
-@media all and (min-width: 600px) and (max-width: 1023px) {
+@media all and (min-width: 600px) and (max-width: 1033px) {
 * {
 		font-size: 16px;
 }
 
 .menu {
-			flex-wrap: wrap;
+		flex-wrap: wrap;
 	height: 20vh;
 	justify-content: space-between;
 	align-items: center;
@@ -556,7 +508,6 @@ p a:hover, a:focus {
 	height: 10vh;
 	margin-left: auto;
 	margin-right: auto;
-	/*background-color: #fe7171;*/
 }
 
 .logo a img {
@@ -582,7 +533,6 @@ p a:hover, a:focus {
 	align-content: center;
 	font-size: 1.2rem;
     letter-spacing: .15rem;
-    /*font-weight: bold;*/
 	background-color: white;
 }
 
@@ -629,7 +579,6 @@ h1 {
   }
 }
 
-
 h2 {
 	font-size: 1.75rem;  
 	text-align: center;
@@ -642,14 +591,12 @@ h2 {
 	flex-wrap: wrap;
 	width: 100vw;
 	height: 100vh;
-	/*background-color: pink;*/
 }
 
 .aboutme_title {
 	width: 100vw;
 	height: 10vh;
 		display: flex;
-	/*align-items: flex-end;*/
 	background-color: #ffb0b0;
 }
 
@@ -657,13 +604,11 @@ h2 {
 .aboutme_img {
 	width: 100vw;
 	height: 35vh;
-	/*background-color:#595b83;*/
 }
 
 .me_img {
 	width: 30vw;
 	height: auto;
-	/*background-color: pink;*/
 }
 
 .aboutme_text {
@@ -687,7 +632,6 @@ h2 {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	/*background-color: red;*/
 }
 
 .education_title {
@@ -776,7 +720,6 @@ p i {
 	height: 10vh;
 	justify-content: center;
 	align-items: flex-end;
-		/*border: 1px solid black;*/
 }
 
 .skills_subtitle p {
@@ -797,7 +740,6 @@ p i {
 	height: auto;
 	padding-left: 0.5rem;
 }
-
 
 .it_icons, .design_icons {
 	width: 12vw;
@@ -871,11 +813,10 @@ p i {
 	width: 80vw;
 	height: 20vh;
 }
-
 }
 
 
-/*--------------------FIN CSS para MEDIA 600 A 1013PX--------------------*/
+/*--------------------FIN CSS para MEDIA 600 A 1033PX--------------------*/
 
 
 
@@ -929,7 +870,6 @@ p i {
 	align-content: center;
 	font-size: 1.2rem;
     letter-spacing: .15rem;
-    /*font-weight: bold;*/
 	background-color: lightgrey;
 }
 
@@ -982,7 +922,6 @@ h1 {
   }
 }
 
-
 h2 {
 	font-size: 1.5rem;  
 	text-align: center;
@@ -995,21 +934,18 @@ h2 {
 	flex-wrap: wrap;
 	width: 100vw;
 	height: 100vh;
-	/*background-color: pink;*/
 }
 
 .aboutme_title {
 	width: 100vw;
 	height: 10vh;
 		display: flex;
-	/*align-items: flex-end;*/
 	background-color: #ffb0b0;
 }
 
 .aboutme_img {
 	width: 100vw;
 	height: 25vh;
-	/*background-color:#595b83;*/
 }
 
 .me_img {
@@ -1090,7 +1026,6 @@ h5 {
 	height: auto;
 		box-sizing: border-box;
 	padding: 1rem;
-
 }
 
 .studies_item p {
@@ -1131,7 +1066,6 @@ p i {
 	height: 5vh;
 	justify-content: center;
 	align-items: flex-end;
-		/*border: 1px solid black;*/
 }
 
 .skills_subtitle p {
@@ -1157,7 +1091,6 @@ p i {
 	align-items: flex-end;
 	flex-direction: column;
 	flex-wrap: wrap;
-
 }
 
 .language_item {
@@ -1190,7 +1123,6 @@ p i {
 	flex-wrap: wrap;
 	width: 100vw;
 	height: auto;
-	/*background-color: red;*/
 }
 
 .projects_title {
@@ -1209,7 +1141,6 @@ p i {
 .projects_item {
 	width: 80vw;
 	height: auto;
-	/*background-color: yellow;*/
 }
 
 .projects img {
@@ -1220,7 +1151,6 @@ p i {
 .contact {
 	width: 100vw;
 	height: auto;
-		/*background-color: violet;*/
 }
 
 .contact_title {
@@ -1240,22 +1170,18 @@ p i {
 .contact_items {
 	width: 100vw;
 	height: auto;
-	/*background-color: black;*/
 }
 
 .contact_text {
 	width: 100vw;
 	height: auto;
 	margin-top: 10px;
-		/*background-color: green;*/
 }
 
 .contact_icons {
 	width: 100vw;
 	height: auto;
-		/*background-color: blue;*/
 }
-
 }
 
 /*--------------------FIN CSS para MEDIA 450 A 599PX--------------------*/
@@ -1286,7 +1212,6 @@ p i {
 		width: 100vw;
 	height: 10vh;
 	background-color: #ffb0b0;
-		/*background-color: #fe7171;*/
 }
 
 .logo a img {
@@ -1311,7 +1236,6 @@ p i {
 	align-content: center;
 	font-size: 1rem;
     letter-spacing: .15rem;
-    /*font-weight: bold;*/
 	background-color: lightgrey;
 }
 
@@ -1362,7 +1286,6 @@ h1 {
   }
 }
 
-
 h2 {
 	font-size: 21px;  
 	text-align: center;
@@ -1382,14 +1305,12 @@ h2 {
 	width: 100vw;
 	height: 5vh;
 		display: flex;
-	/*align-items: flex-end;*/
 	background-color: #ffb0b0;
 }
 
 .aboutme_img {
 	width: 100vw;
 	height: auto;
-	/*background-color:#595b83;*/
 }
 
 .me_img {
@@ -1461,7 +1382,6 @@ h5 {
 	align-items: center;
 	width: 100vw;
 	height: 5vh;
-	/*background-color: pink;*/
 }
 
 .studies_item {
@@ -1591,7 +1511,6 @@ p i {
 	width: 100vw;
 	height: auto;
 		border-bottom: 2px dashed black;
-	/*background-color: red;*/
 }
 
 .projects_title {
@@ -1610,8 +1529,7 @@ p i {
 .projects_item {
 	width: 90vw;
 	height: auto;
-			margin-bottom: 30px;
-	/*background-color: yellow;*/
+		margin-bottom: 30px;
 }
 
 .projects img {
@@ -1622,7 +1540,6 @@ p i {
 .contact {
 	width: 100vw;
 	height: auto;
-		/*background-color: violet;*/
 }
 
 .contact_title {
@@ -1643,14 +1560,12 @@ p i {
 	width: 100vw;
 	height: auto;
 		border-top: none;
-	/*background-color: black;*/
 }
 
 .contact_text {
 	width: 100vw;
 	height: auto;
 	margin-top: 10px;
-		/*background-color: green;*/
 }
 
 .contact_text p:first-child {
@@ -1674,7 +1589,6 @@ p i {
 }
 
 .icon {
-	/*background-color: pink;*/
 	width: 30rem;
 	text-align: center;
 	display: inline-block;
