@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	color: #382B2B;
+}
+header {
+	background-color: #557571;
+}
+section {
+	background-color: #d49a89;
+}
+article {
+	background-color: #f7d1ba;
+}
+footer {
+	background-color: #f4f4f4;
+}
+/* Propiedades de texto */
+h1{
+	letter-spacing: 1px; /* acepta medidas absolutas, relativas y flexibles */
+	text-align: center; /* Left | Right | Justify */
+	text-shadow:  10px 20px #726363;
+}
+.parrafo1 {
+	word-spacing: 5px;
+}
+.parrafo2{
+	text-transform: uppercase; /* lowercase | capitalize */
+}
+h3{
+	text-decoration: overline; /* underline | overline underline | line-through */
+	text-decoration-color: red; /* RGB | RGBA | HSL | HSLA | #XXXXXX */
+	text-decoration-style: wavy; /* solid | double */
+}
+h4{
+	text-shadow:  1px 2px #726363;
+}
+/* Bordes */
+table{
+	border: 2px solid black; /* double | dotted */
+}
+td {
+	border-left: 1px dotted orange;
+	border-right: 1px solid green;
+	border-bottom: 1px double blue;
+	border-top: 1px solid pink;
+}
+button {
+	border-radius: 25px;
+	border: 1px solid #726363;
+}
+ol li {
+	list-style-type: lower-roman; /* upper-alpha | upper-roman | lower-alpha | none */
+}
+ul li {
+	list-style-type: circle; /* square | disc | none */
+}

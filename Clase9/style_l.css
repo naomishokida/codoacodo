@@ -1,0 +1,18 @@
+a {
+	font-size: 20px;
+}
+
+a:link {
+	color: #1a1a2e;
+	text-decoration: none;
+}
+a:active {
+	color: #206a5d;
+}
+a:hover {
+	background-color:purple;
+	color: #40a8c4;
+}
+a:visited {
+	color: #e94560;
+}

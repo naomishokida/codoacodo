@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="../style_teoria.css" rel="stylesheet" type="text/css"/>
+	<link rel="icon" type="image/png" href="../img/favicon.png"/>
+	<title>Teoría: CSS</title>
+</head>
+<body>
+	<main>
+		<section>
+			<h1>FLEXBOX: CLASE 8</h1>
+			<h2>Flexbox</h2>
+			<p>Cuando trabajamos con flexbox primero hay que definir un contenedor flexible con la propiedad display y el valor flex, luego necesitamos pensar en términos de dos ejes: el principal y el eje cruzado. El principal está definido por la propiedad flex-direction y el eje cruzado es perpendicular a este.</p>
+			<ul>
+				<li>flex-direction: Define en qué dirección el contenedor va a apilar los flex-items, posee cuatro valores: 
+					<ul>
+						<li>row</li>
+						<li>row-reverse</li>
+						<li>column</li>
+						<li>column-reverse</li>
+						<img src="../img/9_flexdirection.jpg" alt="flex-direction">
+						<img src="../img/9_flexdirection1.jpg" alt="flex-direction">
+					</ul>
+				</li>
+				<li>justify-content: se utiliza para alinear ítems en el eje principal:
+					<ul>
+						<li>flex-start: Es el valor por defecto, alinea los elementos al principio del contenedor.</li>
+						<li>center: alinea los elementos en el centro del contenedor.</li>
+						<li>flex-end: alinea los elementos al final del contenedor.</li>
+						<li>space-between: muestra a los elementos con espacio entre las líneas.</li>
+						<li>space-around: muestra a los elementos con espacio antes, entre y después de las líneas.</li>
+					</ul>
+				</li>
+				<li>align-items: se utiliza para alinear los ítems respecto al eje secundario.
+					<ul>
+						<li>flex-start: alinea los elementos en la parte superior del contenedor.</li>
+						<li>center: alinea los elementos en el centro del contenedor.</li>
+						<li>flex-end: alinea los elementos en la parte inferior del contenedor.</li>
+						<li>stretch: estira los elementos en la parte inferior del contenedor.</li>
+						<li>baseline: alinea los elementos como sus líneas de base se alinean.</li>
+						<img src="../img/9_alignitems.jpg" alt="align-items">
+					</ul>
+				</li>
+				<li>flex-wrap: especifica si los ítems son obligados a permanecer en la misma línea o si pueden fluir en varias.
+					<ul>
+						<li>nowrap: los ítems van a ser distribuidos en una sola línea.</li>
+						<li>wrap: los ítems van a ser colocados en varias líneas, y si llegan a sobrepasar el ancho de su contenedor se va a generar un quiebre para que los ítems se puedan seguir apilando en varias lineas.</li>
+						<li>wrap-reverse: los ítems van a ser colocados en varias líneas pero en orden inverso.</li>
+						<img src="../img/9_flexwrap.jpg" alt="flex-wrap">
+					</ul>
+				</li>
+				<li>flex-flow: establece las propiedades flex-direction y flex-wrap juntas. flex-flow: < flex-direction > < flex-wrap >;</li>
+				<li>align-content: ajusta las líneas dentro de un contenedor flex.
+					<ul>
+						<li>flex-start: las líneas son ajustadas a partir del final del eje transversal. El borde transversal de inicio de la primera línea y el del contenedor flex quedan unidos.</li>
+						<li>flex-end: las líneas son ajustadas a partir del final del eje transversal. El borde transversal final de la última linea y el del contenedor flex quedan unidos.</li>
+						<li>center: las líneas son ajustadas hacia el centro del contenedor flex. Las líneas son unidas entre sí y centradas dentro del contenedor.</li>
+						<li>space-between: las líneas son distribuidas de manera uniforme en el contenedor flex. El espaciado entre cualquier par de elementos adyacentes es el mismo. Los bordes transversales de inicio y de fin del contenedor son unidos a los bordes de la primera y la última línea.</li>
+						<li>space-around: las líneas son distribuidas uniformemente de modo que el espacio entre cualquier par de elementos adyacentes sea el mismo. El espacio vacío antes de la primera línea y el espacio después de la última es igual a la mitad del espacio entre los elementos.</li>
+						<li>strech: las líneas son estiradas para usar el espacio sobrante.</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+	</main>
+</body>
+</html>

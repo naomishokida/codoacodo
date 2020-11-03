@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	text-align: center;
+}
+/* flex-wrap | align-content | flex-basis | order */
+.flex-container {
+	width: 500px;
+	height: 500px;
+	background-color: #c8d5b9;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;  /*nowrap | wrap | wrap-reverse */
+	align-content: flex-start;
+}
+.flex-item {
+	background-color: #8fc0a9;
+	width: 100px;
+	height: 100px;
+}
+.flex-item:nth-child(even) {
+	background-color: #68b0ab;
+}

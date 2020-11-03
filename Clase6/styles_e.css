@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+h1{
+	text-align: center;
+	font-family: 'Slabo 27px', serif;
+}
+form{
+	background-color: rgba(224, 224, 224, 0.5);
+}
+input{
+	color: #8522E7;
+	font-weight: bold;
+	border: none;
+}
+footer{
+	text-align: center;
+}

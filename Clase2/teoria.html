@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+	<meta charset="UTF-8"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="style.css" type="text/css"/>  
+	<link rel="icon" type="image/png" href="../img/favicon.png"/>
+	<title>Clase 2 - Teoría</title> 
+
+</head>
+<body> 
+
+	<h1>JAVA FULL STACK - CLASE 2</h1>
+	<h2>Estructura básica</h2>
+		<ul>
+			<li>!DOCTYPE HTML: Para saber con qué versión de HTML estamos trabajando.</li>
+			<li>html lang="es": Etiqueta que va a englobar a todo el resto. Siempre acompañada del atributo lang.</li>
+			<li>head: Acá van los meta, links, título de la pág.</li>
+			<li>meta charset="UTF-8": Caracteres especiales</li>
+			<li>meta name="viewport" content="width=device-width, initial-scale=1.0": Relacionada al responsive de la página</li>
+			<li>title: Nombre de la página</li>
+			<li>link rel: Para llamar a los archivos externos que vamos a utilizar</li>
+			<li>body: Acá va a estar todo el contenido audiovisual de la página</li>
+		</ul>
+
+	<h2>Etiquetas semánticas</h2>
+		<ul>
+			<li>header: Encabezado de un documento o sección. Su fin es que lo utilicemos como un contenedor introductorio. Título principal, nombre de la pág, logo.</li>
+			<li>nav: En algunos casos se puede incluir en el Header, define un conjunto de enlaces de navegación.</li>
+			<li>main: Representa al contenido principal dentro del body. No va a tener información.</li>
+			<li>section: Define secciones de un documento. Capítulos, encabezados. No debería utilizarse como un contenedor genérico, para esto se utiliza <i>div</i>. Tiene que tener secciones que sean relevantes. </li>
+			<li>article: Especifica contenido autónomo. Mensajes de un foro, comentarios.
+			<li>aside: No es muy utilizada, aunque se usa para colocar información adicional. Publicidad.</li>
+			<li>footer: Pie de pagina, está relacionado con el copyright, mapa de un sitio, información de contacto.</li>
+		</ul>
+		<p>Estas etiquetas son las que le dan un significado a nuestro documento.</p>
+
+		<p>No todas las etiquetas tienen atributos. Algunas etiquetas sí tienen etiquetas y valores.</p>
+
+	<h2>Enlaces o hipervínculos</h2>
+		<ul>
+			<li>a: Enlaces o hipervínculos. Siempre va acompañado del atributo <i>href</i>, que indica el enlace al que uno quiere ir. Atributo target="_blank": permite que lo abra en otra nueva pestaña. Hay tres tipos de enlace:
+				<ul>
+					<li>Absolutos: Incluye todas las partes de una URL.</li>
+					<li>Relativos: Lo vamos a llamar desde carpetas locales. </li>
+					<li>Ancla: Es para ir a un lugar dentro de la misma página.</li>
+				</ul>
+			</li>
+		</ul>
+
+	<h2>Imágenes</h2>
+		<p>No tiene etiqueta de cierre. Va con el atributo <i>src=""</i>. Tiene de atributo obligatorio <i>alt=""</i>. Se puede agregar width y height. Mediante css se puede agregar imágenes también.</p>
+
+	<h2>Etiquetas básicas</h2>
+		<ul>
+			<li>h1 - h6: Suele estar dentro de section.</li>
+			<li>p: Únicamente para texto.</li>
+			<li>b</li>
+			<li>mark</li>
+			<li>ins</li>
+			<li>small</li>
+			<li>i</li>
+			<li>del</li>
+			<li>sup</li>
+			<li>sub</li>
+		</ul>
+
+
+	<script src="script.js"></script> <!-- Siempre es ideal ponerlos al final del body -->
+</body>
+</html>

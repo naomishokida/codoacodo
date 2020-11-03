@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1::first-letter {
+	color: #d49a89;
+}
+
+p::first-line {
+	color: #e11d74;
+}
+
+h2::before{
+	content: "👹";
+}
+
+h2::after{
+	content: "🐼";
+}
+
+p:😒election {
+	background-color: red;
+	color: white;
+}

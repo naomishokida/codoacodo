@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link href="styles_e.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" type="image/png" href="../img/favicon.png"/>
+            <title>
+                Clase 6 
+            </title>
+    </head>
+    <!--
+        -1) Crear archivo externo para los estilos.
+        -2) Colocar las etiquetas semánticas que correspondan.
+        -3) Agregar un background color: #E0E0E0 que tenga 0.5 de opacidad.
+        -4) Usar fuentes de Google Fonts.
+        -5) Centrar el titulo principal.
+        -6) Hacer que la barra de navegación nos lleve a cada parte de la página que corresponda.
+        -8) Agregar los types correspondientes a cada input.
+        -9) agregarle estilos a los inputs.
+        -10) pie de pagina centrado.
+        -11) cerrar bien las etiquetas simples, ej: <link />, <meta />, <img />
+    -->
+    <body>
+        <header>
+            <h1> Welcome! </h1>
+        </header>
+
+        <nav>
+            <a href="#"> Home </a>
+            <a href="#about_us"> About </a>
+            <a href="#register"> Register </a>
+        </nav>
+
+    <main>
+        <section>
+            <h2 id="about_us">About Us</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <img src="https://picsum.photos/500/370" alt="Foto" />
+        </section>
+
+        <div>
+            <form>
+                <h2 id="register">
+                    Register
+                </h2>
+                <br/>
+                <label>
+                    Name:
+                    <input id="name" name="name" placeholder="Ingrese su nombre" required="" type="text"/>
+                </label>
+                <label>
+                    Last Name:
+                    <input id="lastname" name="lastiname" placeholder="Ingrese su apellido" required="" type="text"/>
+                </label>
+                <label>
+                    Phone:
+                    <input id="phone" name="phone" placeholder="Ingrese su teléfono" required="" type="tel"/>
+                </label>
+                <label>
+                    Mail:
+                    <input id="mail" name="mail" placeholder="Ingrese su correo" required="" type="email"/>
+                </label>
+                <label>
+                    Password:
+                    <input id="password" name="password" placeholder="Ingrese su contraseña" required="" type="password"/>
+                </label>
+                <input id="submit" type="submit" value="Sign In"/>
+            </form>
+        </div>
+
+    </main>
+        
+        <footer>
+            <p>
+                Copyright © all rights reserved.
+            </p>
+        </footer>
+    </body>
+</html>

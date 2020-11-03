@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+ul li{
+	list-style: none;
+}
+
+h1{
+	font-family: 'Clicker Script', cursive;
+	font-size: 100px;
+}
+#menu{
+	background-color: #FBDACD;
+}
+h2{
+	font-style: italic;
+}
+#imagenUno{
+	width: 30vw;
+	height: 50vh;
+}
+div img{
+	width: 5vw;
+	height: 10vh;
+}
+table, th, td{
+	border: solid black 0.5px;
+	background-color: #E4D4CE;
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+	background-color: violet;
+}
+
+/* media queries */
+@media screen and (max-width: 400px) {
+	body {
+		background-color: red;
+	}
+}
+@media (min-width: 401px) and (max-width: 800px) {
+	body {
+		background-color: blue;
+	}
+}
+@media (min-width: 801px) and (max-width: 1200px) {
+	body {
+		background-color: green;
+	}
+
+}
+/* ---
+pantallas extra chicas
+@media only screen and max-width: 600px;
+pantallas chicas (tablets y celulares grandes)
+ min-width: 768px;
+ pantallas grandes (algunas pantallas de escritorio)
+ min-width: 992px (aprx);

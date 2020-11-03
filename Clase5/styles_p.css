@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Raleway:wght@300&display=swap');
+/* Selector Universal */
+* {
+}
+/* Selectores de etiqueta */
+h1 {
+	font-family: 'Petit Formal Script', cursive;
+}
+h1, h3, h4 {
+	color: #D25B42;
+}
+/* Selectores de clase */
+.rosa{
+	color: pink;
+	font-size: 32px;
+	font-weight: 800;
+}
+/* Selectores de tipo ID */
+#subtitulo{
+	background-color: #F79A77;
+}
+.italic{
+	font-style: italic;
+}
+/* Fonts
+font-family: 'Balsamiq Sans', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; */
+.color{
+	color: rgb(45, 255, 153);
+}
+h3{
+	color: rgba(241, 112, 86, 0.8);
+}
+h4{
+	color: hsl(10, 47%, 69%);
+}
+.parrafouno{
+	font-size: 1em;
+}
