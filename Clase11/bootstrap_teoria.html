@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="../style_teoria.css" rel="stylesheet" type="text/css"/>
+	<link rel="icon" type="image/png" href="../img/favicon.png">
+	<title>Teoría: Bootstrap</title>
+</head>
+<body>
+	<main>
+		<section>
+			<h1>Bootstrap: Teoría</h1>
+			<h2>¿Qué es un framework?</h2>
+			<p>Es un conjunto de herramientas, librerías, convenciones y buenas prácticas que pretenden encapsular las tareas repetitivas en módulos genéricos fácilmente reutilizables.</p>
+			<p>Un framework CSS es un conjunto de herramientas, hojas de estilos que permiten olvidarse de las tareas repetitivas para centrarse en los elementos únicos de cada diseño en los que puede aportar valor.</p>
+
+			<h2>Bootstrap</h2>
+			<p>Es un framework CSS, es decir, es un archivo CSS (tiene también archivos JS) que se añade en los proyectos para tener una serie de estilos ya preparados para utilizar. Este tipo de librerías CSS suelen incluir estilos para los elementos más columnes de una página web, como por ejemplo, botones, tarjetas, navbars, etc.</p> 
+			<p>Además tiene una serie de estilos para crear columnas fácilmente.</p>
+			<p>Su principal objetivo es permitir la construcción de sitios web responsive para dispositivos móviles.</p>
+			<p>Para instalarlo, tenemos dos maneras:</p>
+			<ul>
+				<li>Descarlo y utilizarlo de manera local.</li>
+				<li>Incluir CDN en el proyecto</li>
+			</ul>
+
+			<h2>Container</h2>
+			<p>Los contenedores como su nombre indica, sirven para crear una 'caja' o 'contenedor' dentro de la que va el contenido de una página web.</p>
+			<p>Cuando le aplicas a un elemento HTML la clase container lo que ocurre es que a ese elemento se le aplica un ancho y un padding determinado y además se coloca en el centro de la página web.</p>
+			<p>Bootstrap viene con tres contenedores diferentes:</p>
+			<ul>
+				<li>.container: que establece un max-width en todos los breakpoints responsive. Genera dos márgenes (derecha-izquierda) del mismo tamaño y también se centra.</li>
+				<li>.container-fluid: que establece un width: 100% en todos los breakpoint. Ocupa toda la pantalla, es decir, el 100% del tamaño disponible de la pantalla. Se utiliza más en header o navs para que ocupen todo el ancho si le ponemos un color de fondo.</li>
+				<li>.container-{breakpoint}: que tiene un width:100% hasta el breakpoint especificado. Esto está relacionado con los media queries, Bootstrap ya establece valores predeterminados.</li>
+				<img src="img/container.jpg" alt="Tamaños Container">
+			</ul>
+
+			<h2>Grid System</h2>
+			<p>El sistema de grillas de Bootstrap permite hasta 12 columnas en la página. Es posible agrupar las columnas para crear columnas más amplias. Este sistema es responsive, por lo tanto, las columnas se reorganizarán automáticamente dependiendo del tamaño de la pantalla. Podemos elegir la distribución que queramos, siempre que alcancemos las 12 columnas.</p>
+			<img src="img/gridsystem.jpg" alt="Grid System">
+			<ul>
+				<li>La clase row funcionaría como una fila en una tabla.</li>
+				<li>La clase col son las columnas.</li>
+			</ul>
+
+		</section>
+	</main>
+	
+</body>
+</html>

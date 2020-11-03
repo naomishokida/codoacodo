@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="../style_teoria.css" rel="stylesheet" type="text/css"/>
+	<link rel="icon" type="image/png" href="../img/favicon.png">
+	<title>Teoría CSS GRID</title>
+</head>
+<body>
+	<main>
+		<h1>CSS GRID: Teoría</h1>
+	</main>
+
+	<section>
+		<h2>CSS GRID:</h2>
+			<ul>
+				<li>Es un modelo bidimensional de layout basado en cuadrículas, se usa para dividir una página en pequeños y espaciados segmentos.</li>
+				<li>Nos permite manejar las filas y columnas a nuestro gusto.</li>
+				<li>La diferencia con Flexbox es que es unidimensional, cuando íbamos agregando flex-items se iban posicionando uno al lado del otro en el eje principal. En cambio Grid los va ubicando tanto en filas como en columnas.</li>
+				<li>Para empezar, necesitamos definir un container, el cual actuará como elemento padre y en el cual tendremos los grid-items. A este elemento le asignaremos en CSS:
+				.container {
+				display:grid;
+				}	
+				</li>
+			</ul>
+
+			<h2>Elementos:</h2>
+				<ul>
+					<li>Grid-lines: son las líneas de nuestra cuadrícula.</li> 
+					<li>Grid-items.</li>
+					<li>Grid-cells.</li>
+					<li>Grid-track: representa una fila con una columna.</li>
+					<li>Grid-area: Representa un espacio rectangular en nuestra grilla.</li>
+			</ul>
+
+			<h2>Grid Templates</h2>
+				<p>Grid Templates: Nos permite crear filas o columnas a nuestro gusto o necesidad.</p>
+				<ul>
+					<li>grid-template-columns: columna1 columna2 columna3;</li>
+					<li>grid-template-rows: fila1 fila2 fila3;</li>
+					Podemos abreviar esto con:
+					<li>grid-template: < rows > / < columns ></li>
+				</ul>
+
+				<h2>Repeat</h2>
+				<p>Si las columnas o filas son iguales, podemos usar esta función para no tener que repetir manualmente. Nos permite repetir patrones para definir filas o columnas. 
+					<br />
+				repeat(< veces a repetir >, < patron >)
+					<br />
+				grid-template-rows: repeat(6,150px);</p>
+
+				<h2>Unidad fr</h2>
+				<p>Unidad de medida únicamente para los Grid, indica el espacio disponible que tenemos en la grilla. Es más responsive. Representa una fracción. o tendrías que usar ningún media-query.</p>
+
+				<p>Grid y flex trabajan juntos, son complementarios. Lo ideal para empezar a desarrollar es una base de layouts o división de columnas que le podamos aplicar a los divs. </p>
+
+				<h2>Asignar espacios</h2>
+				<p>Son propiedades de los grid-items:</p>
+					<ul>
+						<li>grid-column-start: desde qué linea en columna va a ocupar el item.</li>
+						<li>grid-column-end: Hasta qué linea en columna va a ocupar el item.</li>
+						<li>grid-column: < grid-column-star / < grid-column-end > </li>
+						<li>grid-row-start: Desde qué linea en fila va a ocupar el item.</li>
+						<li>grid-row-end: Hasta qué linea en fila va a ocupar el item.</li>
+						<li>grid-row: < grid-row-star / < grid-row-end >  </li>
+
+					</ul>
+	</section>
+	
+</body>
+</html>
