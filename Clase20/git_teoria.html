@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="../style_teoria.css" rel="stylesheet" type="text/css"/>
+	<link rel="icon" type="image/png" href="../img/favicon.png">
+	<title>Teoría: JavaScript</title>
+</head>
+<body>
+	<main>
+		<section>
+			<h1>GIT: CLASE 1</h1>
+
+			<h2>¿Qué es?</h2>
+			<p><mark>Es un sistema de control de versiones, que permite gestionar los cambios que hacemos sobre un directorio de archivos completo y todo su contenido</mark>, cada cambio que hacemos, git lo almacena en una base de datos interna, a los cuales podemos acceder en cualquier momento ya sea por una interfaz gráfica o desde una terminal.</p>
+			<p><mark>Es un sistema que ayuda a organizar el código, el historial y su evolución</mark>, funciona como una maquina del tiempo que permite navegar a diferentes versiones del proyecto y si queremos agregar una funcionalidad nueva nos permite crear una rama (branch) para dejar intacta la versión estable y crear un ambiente de trabajo en el cual podemos trabajar en nueva funcionalidad sin afectar el original.</p>
+
+			<h2>¿Cómo funciona?</h2>
+			<p>Git almacena instantáneas de un mini sistema de archivos, cada vez que confirmamos un cambio lo que git hace es tomar una “foto” al aspecto del proyecto en ese momento y crea una referencia a esa instantánea, si un archivo no cambió git no almacena el nuevo archivo sino que crea un enlace a la imagen anterior idéntica que ya tiene almacenada.</p>
+			<img src="../img/20_git.jpg" alt="Git" />
+
+			<h2>Empecemos</h2>
+			<p>Una vez realizada la configuración básica, hay que utilizar la línea de comando para ubicarnos en la carpeta que queremos hacer control de versión. Una vez parados en esa carpeta, inicializamos git mediante el comando git init que también va a crear un archivo oculto llamado .git que se va a a encargar de llevar el control de todas las modificaciones que se hagan en esa carpeta.</p>
+			<p>Con el comando git status se van a mostrar en rojo todos los archivos que git sabe que existen en la carpeta pero que todavía no están registrados.</p>
+			<p>Para que esos cambios queden registrados tenemos que añadirlos con el comando git add . el punto indica que queremos añadir todos los archivos y si ahora hacemos git status todos los archivos van a aparecer en verde.</p>
+
+			<h2>Terminología</h2>
+			<ul>
+				<li>Repositorio: Es la carpeta principal donde se encuentran almacenados los archivos que componen el proyecto. El directorio contiene metadatos gestionados por Git, de manera que el proyecto es configurado como un repositorio local.</li>
+				<li>Commit: Un commit es el estado de un proyecto en un determinado momento de la historia del mismo, imaginemos esto como punto por punto cada uno de los cambios que van pasando. Depende de nosotros cada commit.</li>
+				<li>Rama (branch): Una rama es una línea alterna del tiempo, en la historia de nuestro repositorio. Funciona para crear features, arreglar bugs, experimentar, sin afectar la versión estable o principal del proyecto. La rama principal por defecto es master.
+					<img src="../img/20_gitterminologia.jpg" alt="Git" />
+				</li>
+				<li>Pull Request: En proyectos con un equipo de trabajo, cada persona puede trabajar en una rama distinta pero llegado el momento puede pasar que dicha rama se tenga que unir a la rama principal, para eso se crea un pull request donde comunicas el código que incluye tu cambio y usualmente revisan tu código, se agregan comentarios y por último lo aprueban para darle merge. En el contexto de GIT, merge significa unir dos trabajos, en este caso tu branch con master.</li>
+			</ul>
+
+
+		</section>
+	</main>
+</body>
+</html>
