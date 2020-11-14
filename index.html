@@ -5,72 +5,83 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link href="style.css" rel="stylesheet" type="text/css"/>
 	<link rel="icon" type="image/png" href="img/favicon.png">
+	<script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
 	<title>Java FullStack</title>
 </head>
 <body>
 	<main>
-		<h1>JAVA FULLSTACK - CODO A CODO 4.0</h1>
 
-		<nav>
-			<a href="#" class="nav">Inicio</a>
-			<a href="https://aulasvirtuales.bue.edu.ar/login/index.php" target="_blank" class="nav">Aula Virtual</a>
-			<a href="https://www.youtube.com/playlist?list=PL8HjuKKpcUZLICfre2VW_HhU7YiGGWbq_" target="_blank" class="nav">Clases Youtube</a>
-			<a href="https://drive.google.com/drive/folders/1Q8eEQRl2tH6rlVj98qk9aZnfFQHoSVYq" target="_blank" class="nav">Recursos</a>
-		</nav>
+		<section id="home">
+			<h1 class="title"><a href="#">JAVA FULLSTACK - CODO A CODO 4.0</a></h1>
 
-		<div>
-			<section>
-				<p class="tema">HTML5</p>
+			<nav class="navigation_bar">
+				<a href="#modulo_frontend" class="nav">Frontend</a>
+				<a href="#modulo_git" class="nav">Git / Scrum</a>
+				<a href="#modulo_arq" class="nav">Arquitectura</a>
+				<a href="#modulo_backend" class="nav">Backend</a>
+				<a href="portfolio.html" class="nav" target="_blank">Portfolio</a>
+				<a href="#modulo_links" class="nav">Recursos</a>
+			</nav>
+		</section>
+
+<!-------------------- SECTION FRONTEND -------------------->
+		<section id="modulo_frontend">
+
+			<div class="frontend_title">
+				<h2>MODULO FRONTEND</h2>
+			</div>
+
+
+<!---------- SECTION HTML ---------->
+			<div id="html">
+
+				<div class="subtitle subtitle_html">
+					<h3>HTML</h3>
+				</div>
+
 				<ul>
 					<li>
 						<a href="Clase1/html5_teoria.html" target="_blank">Teoría HTML5</a>
 					</li>
 					<li>
-						<a href="https://naomishokida.netlify.app/" target="_blank">Netlify (act hasta el 5-10)</a>
+						<a href="https://naomishokida.netlify.app/" target="_blank"><mark>Netlify (v5/10)</mark></a>
 					</li>
 				</ul>
-			<ul id="clase">
-				<li class="clase">
-					Clase 1
-						<ul>
-							<li>								
-								<a href="Clase1/actividadcomplementaria.html" target="_blank">Actividad Complementaria 1</a>
-							</li>
-						</ul>
-				</li>
 
-				<li class="clase">
-					Clase 2
-						<ul>
-							<li>
-								<a href="Clase2/practica.html" target="_blank">Práctica</a>
-							</li>
-						</ul>
-				</li>
+				<h4 class="clase">Clase 1</h4>
+					<ul>
+						<li>								
+							<a href="Clase1/actividadcomplementaria.html" target="_blank">Actividad Complementaria 1</a>
+						</li>
+					</ul>
 
-				<li class="clase">
-					Clase 3
-						<ul>
-							<li>
-								<a href="Clase3/iconos.html" target="_blank">Iconos</a>
-							</li>
-							<li>
-								<a href="Clase3/iframe.html" target="_blank">Iframe</a>
-							</li>
-							<li>
-								<a href="Clase3/listas.html" target="_blank">Listas</a>
-							</li>
-							<li>
-								<a href="Clase3/tablas.html" target="_blank">Tablas</a>
-							</li>
-							<li>
-								<a href="Clase3/actividadcomplementaria.html" target="_blank">Actividad Complementaria 2</a>
-							</li>
-						</ul>
-				</li>
+				<h4 class="clase">Clase 2</h4>
+					<ul>
+						<li>
+							<a href="Clase2/practica.html" target="_blank">Práctica</a>
+						</li>
+					</ul>
 
-				<li class="clase">
-					Clase 4
+				<h4 class="clase">Clase 3</h4>
+					<ul>
+						<li>
+							<a href="Clase3/iconos.html" target="_blank">Iconos</a>
+						</li>
+						<li>
+							<a href="Clase3/iframe.html" target="_blank">Iframe</a>
+						</li>
+						<li>
+							<a href="Clase3/listas.html" target="_blank">Listas</a>
+						</li>
+						<li>
+							<a href="Clase3/tablas.html" target="_blank">Tablas</a>
+						</li>
+						<li>
+							<a href="Clase3/actividadcomplementaria.html" target="_blank">Actividad Complementaria 2</a>
+						</li>
+					</ul>
+
+				<h4 class="clase">Clase 4</h4>
 						<ul>
 							<li>
 								<a href="Clase4/practica_formulario.html" target="_blank">Formulario</a>
@@ -79,224 +90,458 @@
 								<a href="Clase4/trabajopractico.html" target="_blank">Trabajo Práctico</a>
 							</li>
 						</ul>
-				</li>
-			</ul>
-			</section>
+			</div>
 
-			<section>
-			<p class="tema">CSS3</p>
-			<ul>
-				<li>
-					<a href="Clase5/css_teoria.html" target="_blank">Teoría CSS</a>
-				</li>
-				<li>
-					<a href="Clase8/flexbox_teoria.html" target="_blank">Teoría Flexbox</a>
-				</li>
-				<li>
-					<a href="Clase10/ejercicioobligatorio.html" target="_blank">Ejercicio Obligatorio</a>
-				</li>
-			</ul>
 
-			<ul id="clase">
-				<li class="clase">
-					Clase 5
-						<ul>
-							<li>
-								<a href="Clase5/practica.html" target="_blank">Práctica</a>
-							</li>
-							<li>
-								<a href="Clase5/trabajopractico.html" target="_blank">Trabajo Práctico</a>
-							</li>
-						</ul>
-				</li>
-				<li class="clase">
-					Clase 6
-						<ul>
-							<li>
-								<a href="Clase6/practica.html" target="_blank">Práctica</a>
-							</li>
-							<li>
-								<a href="Clase6/ejercicio.html" target="_blank">Ejercicio en clase</a>
-							</li>
-							<li>
-								<a href="Clase6/trabajopractico.html" target="_blank">Trabajo Práctico</a>
-							</li>
-						</ul>
-				</li>
-				<li class="clase">
-					Clase 7
-						<ul>
-							<li>
-								<a href="Clase7/practica.html" target="_blank">Práctica</a>
-							</li>
-						</ul>
-				</li>
-				<li class="clase">
-					Clase 8
-						<ul>
-							<li>
-								<a href="Clase8/unidades.html" target="_blank">Unidades de Medida</a>
-							</li>
-							<li>
-								<a href="Clase8/posicionamiento.html" target="_blank">Posicionamiento</a>
-							</li>
-							<li>
-								<a href="Clase8/flexbox.html" target="_blank">Flexbox</a>
-							</li>
-						</ul>
-				</li>
-				<li class="clase">
-					Clase 9
-						<ul>
-							<li>
-								<a href="Clase9/selectoresavanzados.html" target="_blank">Selectores Avanzados</a>
-							</li>
-							<li>
-								<a href="Clase9/pseudoclases.html" target="_blank">Pseudoclases</a>
-							</li>
-							<li>
-								<a href="Clase9/links.html" target="_blank">Links</a>
-							</li>
-							<li>
-								<a href="Clase9/pseudoelementos.html" target="_blank">Pseudoelementos</a>
-							</li>
-							<li>
-								<a href="Clase9/flexboxdados.html" target="_blank">Práctica Flexbox: Dados</a>
-							</li>
-							<li>
-								<a href="Clase9/flexboxpractica.html" target="_blank">Práctica Flexbox</a>
-							</li>
-						</ul>
-				</li>
-				<li class="clase">
-					Clase 10
-						<ul>
-							<li>
-								<a href="Clase10/transiciones.html" target="_blank">Transiciones</a>
-							</li>
-							<li>
-								<a href="Clase10/animaciones.html" target="_blank">Animaciones</a>
-							</li>
-							<li>
-								<a href="Clase10/responsive.html" target="_blank">Diseño Responsive</a>
-							</li>
-						</ul>
-				</li>
-			</ul>
-			</section>
-		
-			<section>
-			<p class="tema">Bootstrap</p>
-			<ul>
-				<li>
-					<a href="Clase11/cssgrid_teoria.html" target="_blank">Teoría CSS Grid</a>
-				</li>
-				<li>
-					<a href="Clase11/bootstrap_teoria.html" target="_blank">Teoría Bootstrap</a>
-				</li>
-				<li>
-					<a href="Clase11/ejercicioobligatorio1.html" target="_blank">Ejercicio Obligatorio I</a>
-				</li>
-				<li>
-					<a href="Clase11/ejercicioobligatorio2.html" target="_blank">Ejercicio Obligatorio II</a>
-				</li>
-			</ul>
+<!---------- SECTION CSS ---------->
+			<div id="css">
+				
+				<div class="subtitle subtitle_css">
+					<h3>CSS</h3>
+				</div>
 
-			<ul id="clase">
-				<li class="clase">
-					Clase 11
-						<ul>
-							<li>
-								<a href="Clase11/cssgrid_practica.html" target="_blank">Práctica CSS Grid</a>
-							</li>
-							<li>
-								<a href="Clase11/cssgrid.html" target="_blank">CSS Grid</a>
-							</li>
-							<li>
-								<a href="Clase11/bootstrap.html" target="_blank">Bootstrap</a>
-							</li>
-						</ul>
-				</li>
-				<li class="clase">
-					Clase 12
+				<ul>
+					<li>
+						<a href="Clase5/css_teoria.html" target="_blank">Teoría CSS</a>
+					</li>
+					<li>
+						<a href="Clase8/flexbox_teoria.html" target="_blank">Teoría Flexbox</a>
+					</li>
+					<li>
+						<a href="Clase10/ejercicioobligatorio.html" target="_blank">Ejercicio Obligatorio</a>
+					</li>
+				</ul>
+
+				<h4 class="clase">Clase 5</h4>
+					<ul>
+						<li>
+							<a href="Clase5/practica.html" target="_blank">Práctica</a>
+						</li>
+						<li>
+							<a href="Clase5/trabajopractico.html" target="_blank">Trabajo Práctico</a>
+						</li>
+					</ul>
+
+				<h4 class="clase">Clase 6</h4>
+					<ul>
+						<li>
+							<a href="Clase6/practica.html" target="_blank">Práctica</a>
+						</li>
+						<li>
+							<a href="Clase6/ejercicio.html" target="_blank">Ejercicio en clase</a>
+						</li>
+						<li>
+							<a href="Clase6/trabajopractico.html" target="_blank">Trabajo Práctico</a>
+						</li>
+					</ul>
+
+				<h4 class="clase">Clase 7</h4>
+					<ul>
+						<li>
+							<a href="Clase7/practica.html" target="_blank">Práctica</a>
+						</li>
+					</ul>
+				
+				<h4 class="clase">Clase 8</h4>
+					<ul>
+						<li>
+							<a href="Clase8/unidades.html" target="_blank">Unidades de Medida</a>
+						</li>
+						<li>
+							<a href="Clase8/posicionamiento.html" target="_blank">Posicionamiento</a>
+						</li>
+						<li>
+							<a href="Clase8/flexbox.html" target="_blank">Flexbox</a>
+						</li>
+					</ul>
+
+				<h4 class="clase">Clase 9</h4>
+					<ul>
+						<li>
+							<a href="Clase9/selectoresavanzados.html" target="_blank">Selectores Avanzados</a>
+						</li>
+						<li>
+							<a href="Clase9/pseudoclases.html" target="_blank">Pseudoclases</a>
+						</li>
+						<li>
+							<a href="Clase9/links.html" target="_blank">Links</a>
+						</li>
+						<li>
+							<a href="Clase9/pseudoelementos.html" target="_blank">Pseudoelementos</a>
+						</li>
+						<li>
+							<a href="Clase9/flexboxdados.html" target="_blank">Práctica Flexbox: Dados</a>
+						</li>
+						<li>
+							<a href="Clase9/flexboxpractica.html" target="_blank">Práctica Flexbox</a>
+						</li>
+					</ul>
+
+				<h4 class="clase">Clase 10</h4>
+					<ul>
+						<li>
+							<a href="Clase10/transiciones.html" target="_blank">Transiciones</a>
+						</li>
+						<li>
+							<a href="Clase10/animaciones.html" target="_blank">Animaciones</a>
+						</li>
+						<li>
+							<a href="Clase10/responsive.html" target="_blank">Diseño Responsive</a>
+						</li>
+					</ul>
+
+			</div>
+
+
+<!---------- SECTION BOOTSTRAP ---------->
+			<div id="bootstrap">
+
+				<div class="subtitle subtitle_bootstrap">
+					<h3>Bootstrap</h3>
+				</div>
+
+				<ul>
+					<li>
+						<a href="Clase11/cssgrid_teoria.html" target="_blank">Teoría CSS Grid</a>
+					</li>
+					<li>
+						<a href="Clase11/bootstrap_teoria.html" target="_blank">Teoría Bootstrap</a>
+					</li>
+					<li>
+						<a href="Clase11/ejercicioobligatorio1.html" target="_blank">Ejercicio Obligatorio I</a>
+					</li>
+					<li>
+						<a href="Clase11/ejercicioobligatorio2.html" target="_blank">Ejercicio Obligatorio II</a>
+					</li>
+				</ul>
+
+				<h4 class="clase">Clase 11</h4>
+					<ul>
+						<li>
+							<a href="Clase11/cssgrid_practica.html" target="_blank">Práctica CSS Grid</a>
+						</li>
+						<li>
+							<a href="Clase11/cssgrid.html" target="_blank">CSS Grid</a>
+						</li>
+						<li>
+							<a href="Clase11/bootstrap.html" target="_blank">Bootstrap</a>
+						</li>
+					</ul>
+
+				<h4 class="clase">Clase 12</h4>
 					<ul>
 						<li>
 							<a href="">#</a>
 						</li>
 					</ul>
-				</li>
-			</ul>
-			</section>
 
-			<section>
-			<p class="tema">Javascript</p>
-			<ul>
-				<li>
-					<a href="Clase13/js_teoria.html" target="_blank">Teoría JavaScript</a>
-				</li>
-				<li>
-					<a href="portfolio.html" target="_blank"><mark>PROCESO: PORTFOLIO (act 2-11)</mark></a>
-				</li>
-				<li>
-					<a href="Clase13/ejercicioobligatorio1.html" target="_blank">Ejercicio Obligatorio I</a>
-				</li>
-				<li>
-					<a href="Clase13/ejercicioobligatorio2.html" target="_blank">Ejercicio Obligatorio II</a>
-				</li>
-				<li>
-					<a href="Clase13/ejercicioobligatorio3.html" target="_blank">Ejercicio Obligatorio III</a>
-				</li>
-			</ul>
+			</div>
 
-			<ul id="clase">
-				<li class="clase">
-					Clase 13
+
+<!---------- SECTION JAVASCRIPT ---------->
+			<div id="javascript">
+
+				<div class="subtitle subtitle_javascript">
+					<h3>JavaScript</h3>
+				</div>
+
+				<ul>
+					<li>
+						<a href="clase13/js_teoria.html" target="_blank">Teoría JavaScript</a>
+					</li>
+					<li>
+						<a href="portfolio.html" target="_blank"><mark>PROCESO: PORTFOLIO (v2/11)</mark></a>
+					</li>
+					<li>
+						<a href="Clase13/ejercicioobligatorio1.html" target="_blank">Ejercicio Obligatorio I</a>
+					</li>
+					<li>
+						<a href="Clase13/ejercicioobligatorio2.html" target="_blank">Ejercicio Obligatorio II</a>
+					</li>
+					<li>
+						<a href="Clase13/ejercicioobligatorio3.html" target="_blank">Ejercicio Obligatorio III</a>
+					</li>
+				</ul>
+
+				<h4 class="clase">Clase 13</h4>
 					<ul>
 						<li>
 							<a href="Clase13/practica.html" target="_blank">Práctica JavaScript I</a>
 						</li>
 					</ul>
-				</li>
-			</ul>
 
-			<ul id="clase">
-				<li class="clase">
-					Clase 14
+
+				<h4 class="clase">Clase 14</h4>
 					<ul>
 						<li>
 							<a href="Clase14/practica.html" target="_blank">Práctica JavaScript II</a>
 						</li>
 					</ul>
-				</li>
-			</ul>
 
-			<ul id="clase">
-				<li class="clase">
-					Clase 15
+				<h4 class="clase">Clase 15</h4>
 					<ul>
 						<li>
 							<a href="Clase15/practica.html" target="_blank">Práctica JavaScript III</a>
 						</li>
 					</ul>
-				</li>
-			</ul>
 
-			<ul id="clase">
-				<li class="clase">
-					Clase 16
+				<h4 class="clase">Clase 16</h4>
 					<ul>
 						<li>
 							<a href="Clase16/practica.html" target="_blank">Práctica JavaScript IV</a>
 						</li>
 					</ul>
-				</li>
-			</ul>
+
+				<h4 class="clase">Clase 17</h4>
+					<ul>
+						<li>
+							<a href="Clase17/practica.html" target="_blank">Práctica JavaScript V</a>
+						</li>
+					</ul>
+
+				<h4 class="clase">Clase 18</h4>
+					<ul>
+						<li>
+							<a href="Clase18/practica.html" target="_blank">Práctica JavaScript VI</a>
+						</li>
+					</ul>
+
+				<h4 class="clase">Clase 19</h4>
+					<ul>
+						<li>
+							<a href="Clase19/practica.html" target="_blank">Práctica JavaScript VII</a>
+						</li>
+					</ul>
+
+			</div>
 
 
-			</section>
-		
-		</div>
+<!---------- SECTION VUE.JS ---------->
+			<div id="vue">
+
+				<div class="subtitle subtitle_vue">
+					<h3>Vue.js</h3>
+				</div>
+
+				<ul>
+					<li>
+						<a href="clase21/vue_teoria.html" target="_blank">Teoría Vue.js</a>
+					</li>
+				</ul>
+
+				<h4 class="clase">Clase 21</h4>
+					<ul>
+						<li>
+							<a href="clase21/practica.html" target="_blank">Práctica Vue I</a>
+						</li>
+					</ul>
+
+				<h4 class="clase">Clase 22</h4>
+					<ul>
+						<li>
+							<a href="#" target="_blank">#</a>
+						</li>
+					</ul>
+
+			</div>
+
+		</section>
+
+
+<!-------------------- SECTION GIT/SCRUM -------------------->
+		<section id="modulo_git">
+
+<!---------- SECTION GIT ---------->
+			<div id="git">
+				<div class="subtitle subtitle_git">
+					<h3>Git</h3>
+				</div>
+
+				<ul>
+					<li>
+						<a href="clase20/git_teoria.html" target="_blank">Teoría GIT</a>
+					</li>
+					<li>
+						<a href="Clase13/ejercicioobligatorio3.html" target="_blank">Ejercicio Obligatorio</a>
+					</li>
+				</ul>
+
+				<h4 class="clase">Clase 20</h4>
+					<ul>
+						<li>
+							<a href="Clase20/practica.html" target="_blank">Práctica GIT</a>
+						</li>
+					</ul>
+
+			</div>
+
+
+<!---------- SECTION SCRUM ---------->
+			<div id="scrum">
+
+				<div class="subtitle subtitle_scrum">
+					<h3>Scrum</h3>
+				</div>
+
+				<ul>
+					<li>
+						<a href="clase20/scrum_teoria.html" target="_blank">Teoría SCRUM</a>
+					</li>
+				</ul>
+
+				<h4 class="clase">Clase 20</h4>
+					<ul>
+						<li>
+							<a href="#" target="_blank">#</a>
+						</li>
+					</ul>
+
+			</div>
+
+			<div class="git_title">
+				<h2>GIT / SCRUM</h2>
+			</div>
+
+		</section>
+
+
+<!-------------------- SECTION ARQUITECTURA -------------------->
+<!---------- SECTION ARQ ---------->
+		<section id="modulo_arq">
+
+			<div class="arq_title">
+				<h2>ARQUITECTURA</h2>
+			</div>
+
+			<div id="arq">
+				<div class="subtitle subtitle_arq">
+					<h3>Arquitectura</h3>
+				</div>
+
+				<ul>
+					<li>
+						<a href="https://naomish.000webhostapp.com/ejercicioobligatorio2.html" target="_blank">Ejercicio Obligatorio</a>
+					</li>
+				</ul>
+
+				<h4 class="clase">Clase #</h4>
+				<ul>
+					<li>
+						<a href="#" target="_blank">Arquitectura</a>
+					</li>
+				</ul>
+
+			</div>
+		</section>
+
+
+<!-------------------- SECTION BACKEND -------------------->
+
+<!---------- SECTION BASE DE DATOS ---------->
+		<section id="modulo_backend">
+
+			<div id="basededatos">
+
+				<div class="subtitle subtitle_basededatos">
+					<h3>Base de Datos</h3>
+				</div>
+
+				<ul>
+					<li>
+						<a href="clase23/basededatos_teoria.html" target="_blank">Teoría Base de Datos</a>
+					</li>
+				</ul>
+
+				<h4 class="clase">Clase 24</h4>
+					<ul>
+						<li>
+							<a href="#" target="_blank">#</a>
+						</li>
+					</ul>
+
+				<h4 class="clase">Clase 25</h4>
+					<ul>
+						<li>
+							<a href="#" target="_blank">#</a>
+						</li>
+					</ul>
+
+				<h4 class="clase">Clase 26</h4>
+					<ul>
+						<li>
+							<a href="#" target="_blank">#</a>
+						</li>
+					</ul>
+
+			</div>
+
+
+<!---------- SECTION JAVA ---------->
+			<div id="java">
+				<div class="subtitle subtitle_java">
+					<h3>Java</h3>
+				</div>
+
+				<ul>
+					<li>
+						<a href="#" target="_blank">Teoría #</a>
+					</li>
+				</ul>
+
+				<h4 class="clase">Clase 27</h4>
+			</div>
+
+
+
+			<div class="backend_title">
+				<h2>MÓDULO BACKEND</h2>
+			</div>
+
+		</section>
+
+<!-------------------- SECTION RECURSOS -------------------->
+
+<!---------- SECTION LINKS ---------->
+		<section id="modulo_links" >
+			
+			<div class="sources_title">
+				<h2>RECURSOS</h2>
+			</div>
+
+				<nav class="navigation_links">
+					<a href="#" class="nav_footer">Inicio</a>
+					<a href="https://aulasvirtuales.bue.edu.ar/login/index.php" target="_blank" class="nav_footer">Aula Virtual</a>
+					<a href="https://www.youtube.com/playlist?list=PL8HjuKKpcUZLICfre2VW_HhU7YiGGWbq_" target="_blank" class="nav_footer">Clases Youtube</a>
+					<a href="https://drive.google.com/drive/folders/1Q8eEQRl2tH6rlVj98qk9aZnfFQHoSVYq" target="_blank" class="nav_footer">Drive</a>
+				</nav>
+
+		</section>
 	</main>
-	
+<!-------------------- SECTION FOOTER -------------------->
+<!---------- SECTION LINKS ---------->
+	<footer>
+		<div id="modulo_footer"> 
+
+			<div class="contact_icons">
+				<div class="icons">
+					<a href="https://ar.linkedin.com/in/naomi-shokida" class="icon"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<div class="icons">
+					<a href="https://codepen.io/naomish" class="icon"><i class="fab fa-codepen"></i></a>
+				</div>
+				<div class="icons">
+					<a href="" class="icon"><i class="fab fa-github"></i></a>
+				</div>
+				<div class="icons">
+					<a href="mailto:shokida.naomi@gmail.com" class="icon"><i class="far fa-envelope"></i></a>
+				</div>
+			</div>
+
+			<div class="social">
+        		<p>Crafted with <i class="fas fa-mug-hot"></i> and <i class="fas fa-heart"></i> by <a href="#"><i>Naomi</i></a></p>
+        	</section>
+		</div>
+	</footer>
+
 </body>
 </html>
