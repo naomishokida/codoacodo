@@ -2,8 +2,6 @@
 let user = document.querySelector("#usuario");
 let pass = document.querySelector("#clave");
 
-/*---------- Que no haya espacios en blanco ----------*/
-
 function validar() {
     if (!user.value) {
         alert ("Por favor, complete su usuario");
